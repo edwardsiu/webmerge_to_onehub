@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebMerge To OneHub Options</title>
+    <style>
+        .panel {
+            padding: 5px;
+            border: 1px solid black;
+            margin-top: 5px;
+            max-width: 400px;
+            background-color:aliceblue;
+        }
+        #save, #status {
+            margin-top: 5px;
+        }
+        input {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+    <h2>OneHub API Settings</h2>
+        <h3>Your Redirect URI</h3>
+        <div id="redirect_uri"></div>
+
+        <h3>Client ID</h3>
+        <input type="text" id="client_id"></input>
+
+        <h3>Client Secret</h3>
+        <input type="text" id="client_secret"></input>
+    </div>
+    <div class="panel">
+    <h2>Workspace Settings</h2>
+        <h3>Workspace ID</h3>
+        <input type="text" id="workspace_id"></input>
+
+        <h3>Folder ID</h3>
+        <input type="text" id="folder_id"></input>
+    </div>
+
+    <div id="status"></div>
+    <button id="save">Save</button>
+
+    <script src="options.js"></script>
+</body>
+
+</html>
